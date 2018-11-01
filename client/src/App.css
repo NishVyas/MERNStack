@@ -1,0 +1,32 @@
+/* Below we just add some room in between the button and item name */
+.remove-btn {
+    margin-right: 0.5rem;
+}
+
+/* Below is the css for the beginning state of adding an item */
+/* We make the item barely visible */
+.fade-enter {
+    opacity: 0.01;
+}
+
+
+/* Below is the css for the end state when adding an item */
+/* The item is fully visible, the transition takes 1000ms, and has an 'ease-in' action */
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms ease-in;
+}
+
+/* Below is the css for the beginning state when deleting an item */
+/* We make the item barely visible */
+.fade-exit {
+    opacity: 1;
+}
+
+
+/* Below is the css for the end state when we delete an item */
+/* The item is fully visible, the transition takes 1000ms, and has an 'ease-in' action */
+.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 1000ms ease-in;
+}
